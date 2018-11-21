@@ -192,6 +192,8 @@ def main(stdscr):
 
                 return horizontal_movable or vertical_movable
 
+# TODO when only one direction is not movable and the player press that direction, is_movable func still reture True
+
             movable = is_movable(field)
             full = is_full(field)
             if full and not movable:
